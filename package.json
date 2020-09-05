@@ -1,0 +1,18 @@
+{
+  "name": "reminder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "perssBest",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^12.3.1",
+    "fs": "0.0.1-security",
+    "moment": "^2.27.0",
+    "mongoose": "^5.10.2",
+    "timestamp-to-ms": "^1.0.0"
+  }
+}
