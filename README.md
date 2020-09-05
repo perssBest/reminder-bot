@@ -66,7 +66,7 @@ yarn add - Рекомендуется
 Спасибо что прочли этот текст. Мы так же будет вам благодарны если именно ты поставишь звездочку на данных репозиторий
 
 <a href="https://discord.gg/RPb2KXN">
-  <img align="left" alt="Discord" width="31px" src="https://raw.githubusercontent.com/perssBest/perssBest/master/assets/discord.svg" />
+  <img align="left" alt="Discord" width="31px" src="https://raw.githubusercontent.com/perssBest/reminder-bot/master/website/images/discord.svg" />
 </a>
 
 <a href="https://discord.com/api/oauth2/authorize?client_id=748902591034818560&permissions=8&scope=bot">
@@ -76,7 +76,3 @@ yarn add - Рекомендуется
 <a href="https://perssBest.github.io/reminder-bot">
   <img align="left" alt="Site" width="31px" src="https://raw.githubusercontent.com/perssBest/reminder-bot/master/website/images/internet.svg" />
 </a>
-
-<br />
-
-[Сайт бота](https://perssBest.github.io/reminder-bot) | [Сервер по помощь и не только :D](https://discord.gg/RPb2KXN) | [Пригласить бота](https://discord.com/api/oauth2/authorize?client_id=748902591034818560&permissions=8&scope=bot)
