@@ -8,7 +8,7 @@ class Bot extends database {
     constructor(token, url, options) {
         super(url);
         this.token = token; this.options = options;
-        this.client = new Discord.Client(options)
+        this.client = new Discord.Client(this.options)
         this.client.db = new Discord.Collection();
 
         this.client.functions = functions;
