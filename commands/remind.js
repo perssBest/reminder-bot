@@ -18,7 +18,7 @@ module.exports = {
             client.success(`Вы успешно создали напоминание которое сработает в **${moment(new Date(Date.now() + ms(del[1].trim()))).format(`HH:mm / YY.MM.DD`)}**`)
             client.notifications.create({ userID: message.author.id, time: Date.now() + ms(del[1].trim()), text: del[0], channelID: message.channel.id }).then(x => {
                 setTimeout(() => {
-                    message.channel.send(`${message.author} => ${del[0].replace(/@everyone/g, "@enoyreve").replace(/@here/g, "@rehe")}`).catch(err => message.author.send(`${message.author} => ${del[0]}`));
+                    message.channel.send(`${message.author} => ${del[0]}`, { allowedMentions: { parse: [] } }).catch(err => message.author.send(`${message.author} => ${del[0]}`));
                     client.notifications.deleteOne({ _id: x._id }).catch(err => err);
                 }, ms(del[1].trim()))
             })
