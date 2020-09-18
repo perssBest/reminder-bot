@@ -4,6 +4,6 @@ module.exports.clean = (text) => {
 
 module.exports.manipulation = (user) => {
     let a = this.client.channels.cache.get(user.channel)
-    if(!a) this.client.users.cache.get(user.id).send(`<@${user.id}> => ${user.content}`).catch(err => err); else a.send(`<@${user.id}> => ${user.content.replace(/@everyone/g, "enoyreve").replace(/@here/g, "rehe")}`);
+    if(!a) this.client.users.cache.get(user.id).send(`<@${user.id}> => ${user.content}`).catch(err => err); else a.send(`<@${user.id}> => ${user.content}`, { allowedMentions: { parse: [] } });
     this.client.notifications.deleteOne({ _id: user._id }).catch(err => err); this.client.db.delete(user._id);
 }
