@@ -19,6 +19,8 @@ fs.readdirSync('./commands').forEach(module => {
 
 this.client.on("message", async(message) => {
 
+    if(message.author.bot) return;
+
     this.client.error = (text) => { message.reply(new MessageEmbed().setColor(config.error).setDescription(text)) }
     this.client.success = (text) => { message.reply(new MessageEmbed().setColor(config.success).setDescription(text)) }
 
