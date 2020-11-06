@@ -3,7 +3,7 @@ const core = require('./structure/core');
 const config = require('./config.json')
 const fs = require('fs')
 
-bot = new core(process.env.TOKEN, process.env.mongodb, { disableEveryone: true, fetchAllMembers: false });
+bot = new core(process.env.TOKEN, process.env.mongodb, { disableMentions: 'everyone', fetchAllMembers: false });
 bot.login();
 
 this.client = bot.client;
